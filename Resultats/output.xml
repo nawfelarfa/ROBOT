@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-05-06T21:28:28.071556" rpa="false" schemaversion="5">
+<suite id="s1" name="PageObect" source="C:\paravendue\Tests\PageObect.robot">
+<test id="s1-t1" name="Authentificationok" line="11">
+<kw name="openpage" owner="commun">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:28:32.576942" level="INFO">Opening browser 'Chrome' to base url 'https://www.paruvendu.fr/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T21:28:32.576942" elapsed="74.069454"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-06T21:29:46.647402" elapsed="1.545087"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${accepter}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T21:29:48.193490" elapsed="2.482443"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:29:50.676950" level="INFO">Clicking element 'Xpath://*[@id="step1"]/div[3]/button[2]'.</msg>
+<arg>${accepter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:29:50.675933" elapsed="6.821432"/>
+</kw>
+<status status="PASS" start="2024-05-06T21:28:32.574943" elapsed="84.923444"/>
+</kw>
+<kw name="loginok" owner="authentification">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:29:57.503364" level="INFO">Clicking element 'Xpath://*[@id="cpte"]/a'.</msg>
+<arg>${compte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:29:57.502364" elapsed="25.797482"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:23.303844" level="INFO">Clicking element 'id:fcbx_email2'.</msg>
+<arg>${login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:30:23.302845" elapsed="1.449358"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:24.754203" level="INFO">Typing text 'nawfelarfa@gmail.com' into text field 'id:identification_eMail'.</msg>
+<arg>${logmail}</arg>
+<arg>${mailv}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:30:24.753203" elapsed="11.931423"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:36.685622" level="INFO">Clicking element 'id:btnSubmitIdentificationCompte'.</msg>
+<arg>${entrer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:30:36.684626" elapsed="0.262117"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-06T21:30:36.946743" elapsed="2.136161"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:39.083904" level="INFO">Typing password into text field 'id:popinAuthPassword'.</msg>
+<msg time="2024-05-06T21:30:39.186887" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${passwordv}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:30:39.083904" elapsed="0.332738"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:39.417642" level="INFO">Clicking element 'id:btnSubmitIdentificationCompte'.</msg>
+<arg>${entrer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T21:30:39.417642" elapsed="0.137494"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Bonjour</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-06T21:30:39.556135" elapsed="17.043364"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-06T21:30:56.646497" level="INFO">Page title is 'Mon compte - ParuVendu.fr'.</msg>
+<arg>Mon compte - ParuVendu.fr</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-05-06T21:30:56.601522" elapsed="0.044975"/>
+</kw>
+<status status="PASS" start="2024-05-06T21:29:57.500368" elapsed="59.148125"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-06T21:30:56.650493" elapsed="3.388339"/>
+</kw>
+<doc>login avec mail existant</doc>
+<tag>AOK</tag>
+<status status="PASS" start="2024-05-06T21:28:32.572943" elapsed="147.466890"/>
+</test>
+<status status="PASS" start="2024-05-06T21:28:28.092569" elapsed="151.950263"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">AOK</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="PageObect">PageObect</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

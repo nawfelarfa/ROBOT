@@ -1,0 +1,60 @@
+Fonctionnalité: Login OK
+
+Contexte:
+    Étant donné qu'un utilisateur est enregistré dans la base de données
+
+Scénario: Login ok
+    Étant donné que je suis sur la page de https://www.paruvendu.fr/
+    Quand je click sur compte 
+    Alors je suis redirigé vers la page Inscription
+    Et je vois le message "Rejoignez une communauté
+    de confiance"
+    
+    Quand je click su connectez vous 
+    Alors je suis rediriger vers le formulaire de connexion
+    et je vois la zone de saisie de mail 
+
+    Quand j'insert mon mail valide et je click sur continuer
+    Alors la zone de saise du mot de passe sera visible
+    
+    Quand j'insert mon password valide et je click sur continuer
+    Alors je suis rediriger vers la page d'acceuil et 
+    je vois le mot bonjour en haut à gauche
+Fonctionnalité: Login OK
+
+Contexte:
+    Étant donné qu'un utilisateur est enregistré dans la base de données
+
+Scénario: Login KO  mail non valide
+
+    Étant donné que je suis sur la page de https://www.paruvendu.fr/
+    Quand je click sur compte 
+    Alors je suis redirigé vers la page Inscription
+    Et je vois le message "Rejoignez une communauté
+    de confiance"
+    
+    Quand je click su connectez vous 
+    Alors je suis rediriger vers le formulaire de connexion
+    et je vois la zone de saisie de mail 
+
+    Quand j'insert un mail non valide et je click sur continuer
+    Alors  je suis rediriger vers le formulaire d'inscription 
+    
+ Scénario: Login KO  mail valide    Password non valide
+
+    Étant donné que je suis sur la page de https://www.paruvendu.fr/
+    Quand je click sur compte 
+    Alors je suis redirigé vers la page Inscription
+    Et je vois le message "Rejoignez une communauté
+    de confiance"
+    
+    Quand je click su connectez vous 
+    Alors je suis rediriger vers le formulaire de connexion
+    et je vois la zone de saisie de mail 
+
+    Quand j'insert mon mail valide et je click sur continuer
+    Alors la zone de saise du mot de passe sera visible
+    
+    Quand j'insert mon password non valide et je click sur continuer
+    Alors je suis rediriger vers la fenetre indiquant password non valide
+    

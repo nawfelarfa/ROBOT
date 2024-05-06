@@ -1,0 +1,20 @@
+Fonctionnalité: Nouvelle Inscription
+
+Contexte:
+    Étant donné qu'un  est enregistré dans la base de données
+
+Scénario: Inscription
+    Étant donné que je suis sur la page de https://www.paruvendu.fr/
+    Quand je saisis click sur compte 
+    Alors je suis redirigé vers la page Inscription
+    Et je vois le message "Rejoignez une communauté
+    de confiance"
+    
+    Étant donné que je suis sur la page de https://www.paruvendu.fr/Inscription
+    quand je click sur inscriver vous gratuitement
+    alors je suis redirigé vers le formulaire d'Inscription
+
+    Étant donné que je suis sur le formulaire d'inscription
+    quand je remplie le mail, je rempli le prenom,je remplie le prenom, je rempli la ville ou code postale
+    et je clique sur me connecter 
+    Alors je vois un message de bienvenue et de demande de validation de compte par mail
